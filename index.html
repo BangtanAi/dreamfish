@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Рыба моей мечты</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./animation.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="left-title">
+            <div class="left-title__div"></div>
+            <h2>
+              ЗАБРОНИРОВАТЬ <br />
+              КАБИНКУ
+            </h2>
+            <span>В САМОМ А%УЕНОМ КАРАОКЕ</span>
+          </div>
+          <img src="./images/logo.svg" alt="header-logo" class="header-logo" />
+          <div class="right-title">
+            <span class="header-info">ТЕЛЕФОН ДЛЯ РЕЗЕРВА</span>
+            <h1>+7(777) 701-77-77</h1>
+            <span class="header-info">НЕ ПУТАЙТЕ С СЕКСОМ ПО <br />
+              ТЕЛЕФОНУ, У НИХ НА ОДНУ <br />
+              ЦИФРУ ОТЛИЧАЕТСЯ НОМЕР</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="slider">
+      <div class="container">
+        <div class="slider__inner">
+          <nav class="slider-title">
+            <a href="#">ГЛАВНАЯ</a>
+            <a href="#">НАШИ ЗАВЕДЕНИЯ</a>
+            <a href="#">АКЦИИ</a>
+            <a href="#">МЕНЮ</a>
+            <a href="#">КАРТА ГОСТЯ</a>
+            <a href="#">КОНТАКТЫ</a>
+          </nav>
+          <div class="slider__carousel">
+            <img class="slider-border" src="./images/blueborder.svg" alt="" />
+            <div class="slider__carousel-photos">
+              <img class="mySlides fade" src="./images/pinklemuz.svg" alt="" />
+              <img class="mySlides fade" src="./images/whitephon.svg" alt="" />
+              <img class="mySlides fade" src="./images/whitephon.svg" alt="" />
+              <img class="mySlides fade" src="./images/whitephon.svg" alt="" />
+              <img class="mySlides fade" src="./images/whitephon.svg" alt="" />
+              <img class="mySlides fade" src="./images/whitephon.svg" alt="" />
+              <div class="slider-dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main">
+      <div class="container">
+        <div class="main__inner">
+          <div class="main-left">
+            <img class="yellow" src="./images/main/yellowborder.svg" alt="" />
+            <img class="room" src="./images/main/0.svg" alt="" />
+            <img class="microphone" src="./images/main/microphone.svg" alt="" />
+          </div>
+          <div class="main-right__all">
+            <div class="main-photos">
+              <img src="./images/main/1.svg" alt="" />
+              <img src="./images/main/2.svg" alt="" />
+              <img src="./images/main/3.svg" alt="" />
+            </div>
+            <div class="main-right">
+              <span>МЫ ЖДЕМ ВАС</span>
+              <form class="main-form">
+
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Рыба моей мечты">
+                <input type="hidden" name="admin_email" value="przhevalskiyy@list.ru">
+                <input type="hidden" name="form_subject" value="Form Subject">
+                <!-- END Hidden Required Fields -->
+                <input
+                type="text"
+                name="Phone"
+                placeholder="МОЖНО ВАШ ТЕЛЕФОНЧИК +7(777) 777 77 77"
+                required
+              />
+              <br />
+              <button type="submit" class="registerbtn">ОТПРАВИТЬ</button>
+              <!-- <img class="yellow-small" src="./images/main/yellow2.svg" alt="" /> -->
+            </div>
+            
+                <!-- <input type="text" name="Name" placeholder="You name..." required><br>
+                <input type="text" name="E-mail" placeholder="You E-mail..." required><br>
+                <input type="text" name="Phone" placeholder="You phone..."><br>
+                <button>Send</button> -->
+            
+              </form>
+              <!-- <div class="main-form">
+                <input
+                  type="text"
+                  placeholder="МОЖНО ВАШ ТЕЛЕФОНЧИК +7(777) 777 77 77"
+                  name="phone"
+                  id="phone"
+                />
+                <br />
+                <button type="submit" class="registerbtn">ОТПРАВИТЬ</button>
+              </div> -->
+              <!-- <img class="yellow-small" src="./images/main/yellow2.svg" alt="" /> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="grid"></div>
+
+      <div class="warning"></div>
+
+      <div class="base">
+        <button id="activate">
+          <span></span>
+        </button>
+      </div>
+
+      <div class="box opened" id="cover">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <span></span><span></span>
+      </div>
+
+      <div class="hinges"></div>
+
+      <div class="text">SELF-&thinsp;DESTRUCT</div>
+
+      <div id="panel">
+        <div id="msg">DEVICE SELF-DESTRUCTION</div>
+        <div id="time">9</div>
+        <span id="abort">ABORT</span>
+        <span id="detonate">DETONATE</span>
+      </div>
+
+      <div id="turn-off"></div>
+      <div id="closing"></div>
+
+      <div id="restart"><button id="reload"></button></div>
+
+      <div id="mute"></div>
+
+      <audio id="alarm">
+        <source
+          src="https://josetxu.com/demos/sounds/self-destruct-alarm-count.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/animation.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

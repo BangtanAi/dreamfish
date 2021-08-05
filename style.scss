@@ -79,26 +79,24 @@ body {
     line-height: 15px;
     margin-right: 50px;
     a {
-      text-decoration:none;
-      padding: 7px 7px;
+      text-decoration: none;
+      padding: 8px 8px;
       -webkit-user-select: none;
       -moz-user-select: none;
       -ms-user-select: none;
       -o-user-select: none;
       user-select: none;
       color: white;
+      &:hover{
+        color: rgb(221, 215, 215);
+      }
     }
     a:active {
+      position: relative;
       background-color: rgb(255, 255, 255);
-      padding: 6px 6px;
+      padding: 7px 7px;
       color: #00ccff;
       border: 1px solid black;
-      &::after {
-        content: '';
-        background-color: rgb(255, 255, 255);
-        width: 20px;
-        height: 10px;
-      }
     }
   }
   &__carousel {
@@ -177,19 +175,19 @@ body {
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
-    img {
+    a {
       position: absolute;
       &:first-child {
-        top: -80px;
-        left: -60px;
+        top: -83px;
+        left: -99px;
       }
       &:nth-child(2) {
-        left: 125px;
-        top: -90px;
+        left: 92px;
+        top: -92px;
       }
       &:last-child {
-        top: -27px;
-        right: -3px;
+        top: -29px;
+        right: 24px;
       }
     }
   }
@@ -200,6 +198,16 @@ body {
     position: relative;
     left: 67px;
     top: 120%;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 516px;
+      height: 136px;
+      background-color: #ffcc00;
+      top: 108px;
+      z-index: 1;
+      left: 33px;
+    }
     span {
       font-family: 'Bukhari Script';
       font-size: 60px;
@@ -217,6 +225,9 @@ body {
   background-color: #3baad2;
   text-align: center;
   margin-top: 15px;
+  position: relative;
+  z-index: 2;
+  border: 8px solid black;
   input {
     width: 390px;
     display: inline-block;
@@ -238,9 +249,21 @@ body {
     margin-bottom: 8px;
     font-family: 'Rounds Black', Regular;
     font-size: 22px;
-    &:hover{
+    &:hover {
       color: #307e9b;
       background-color: #f5f1f1;
     }
   }
+}
+@font-face {
+  font-family: 'Rounds Black';
+  src: url('./fonts/ofont.ru_Rounds.ttf');
+}
+@font-face {
+  font-family: 'Bukhari Script';
+  src: url(./fonts/BukhariScript-Regular.otf);
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-Regular.ttf');
 }

@@ -104,7 +104,7 @@ body {
 
 .slider-title a {
   text-decoration: none;
-  padding: 7px 7px;
+  padding: 8px 8px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -113,18 +113,16 @@ body {
   color: white;
 }
 
-.slider-title a:active {
-  background-color: white;
-  padding: 6px 6px;
-  color: #00ccff;
-  border: 1px solid black;
+.slider-title a:hover {
+  color: #ddd7d7;
 }
 
-.slider-title a:active::after {
-  content: '';
+.slider-title a:active {
+  position: relative;
   background-color: white;
-  width: 20px;
-  height: 10px;
+  padding: 7px 7px;
+  color: #00ccff;
+  border: 1px solid black;
 }
 
 .slider__carousel {
@@ -230,23 +228,23 @@ body {
           justify-content: space-between;
 }
 
-.main-photos img {
+.main-photos a {
   position: absolute;
 }
 
-.main-photos img:first-child {
-  top: -80px;
-  left: -60px;
+.main-photos a:first-child {
+  top: -83px;
+  left: -99px;
 }
 
-.main-photos img:nth-child(2) {
-  left: 125px;
-  top: -90px;
+.main-photos a:nth-child(2) {
+  left: 92px;
+  top: -92px;
 }
 
-.main-photos img:last-child {
-  top: -27px;
-  right: -3px;
+.main-photos a:last-child {
+  top: -29px;
+  right: 24px;
 }
 
 .main-right__all {
@@ -257,6 +255,17 @@ body {
   position: relative;
   left: 67px;
   top: 120%;
+}
+
+.main-right::after {
+  content: '';
+  position: absolute;
+  width: 516px;
+  height: 136px;
+  background-color: #ffcc00;
+  top: 108px;
+  z-index: 1;
+  left: 33px;
 }
 
 .main-right span {
@@ -276,6 +285,9 @@ body {
   background-color: #3baad2;
   text-align: center;
   margin-top: 15px;
+  position: relative;
+  z-index: 2;
+  border: 8px solid black;
 }
 
 .main-form input {
@@ -305,5 +317,20 @@ body {
 .main-form .registerbtn:hover {
   color: #307e9b;
   background-color: #f5f1f1;
+}
+
+@font-face {
+  font-family: 'Rounds Black';
+  src: url("./fonts/ofont.ru_Rounds.ttf");
+}
+
+@font-face {
+  font-family: 'Bukhari Script';
+  src: url(./fonts/BukhariScript-Regular.otf);
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("./fonts/Montserrat-Regular.ttf");
 }
 /*# sourceMappingURL=style.css.map */
